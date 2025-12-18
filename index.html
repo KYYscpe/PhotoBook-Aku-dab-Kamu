@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3..2..1 💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="fx"></canvas>
+  <div id="bgFloat" aria-hidden="true"></div>
+
+  <div class="stage">
+    <div class="count" id="count">3</div>
+
+    <div class="bigText" id="bigText" aria-hidden="true"></div>
+    <div class="smallText" id="smallText" aria-hidden="true"></div>
+  </div>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="prompt">
+      <div class="promptTitle">Ada sebuah buku ucapan ✨</div>
+      <div class="promptDesc">Mau dibuka sekarang?</div>
+      <div class="promptBtns">
+        <button class="btn primary" id="openBookBtn">Buka</button>
+        <button class="btn ghost" id="laterBookBtn">Nanti</button>
+      </div>
+    </div>
+
+    <div class="bookWrap" aria-label="Buku ucapan">
+      <div class="book" id="book">
+        <div class="bookBack"></div>
+
+        <div class="pages" id="pages">
+          <div class="page left">
+            <div class="pageInner">
+              <div class="pageTitle">Untuk kamu 💗</div>
+              <div class="pageBody" id="pageLeft">
+                Terima kasih sudah jadi alasan aku senyum.
+                <br><br>
+                Kalau hari kamu berat, aku mau kamu ingat:
+                kamu nggak sendirian.
+              </div>
+            </div>
+          </div>
+
+          <div class="page right">
+            <div class="pageInner">
+              <div class="pageTitle">Pesan kecil</div>
+              <div class="pageBody" id="pageRight">
+                Aku sayang kamu.
+                <br><br>
+                Kita jalan pelan-pelan, tapi bareng ya.
+                <br><br>
+                — dari aku, yang selalu pilih kamu.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover" id="cover">
+          <div class="coverFront">
+            <div class="coverBadge">Buku Ucapan</div>
+            <div class="coverBig">LOVE</div>
+            <div class="coverSmall">klik “Buka” untuk membuka</div>
+          </div>
+
+          <div class="coverInner">
+            <div class="innerHint">klik “Tutup” kalau sudah 🤍</div>
+            <button class="btn tiny" id="closeBookBtn">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
