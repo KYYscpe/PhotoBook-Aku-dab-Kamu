@@ -1,0 +1,116 @@
+<!-- reasons.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alasan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff78b6" />
+</head>
+<body class="page">
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" data-nav>
+      <span class="brand-mark"></span>
+      <span class="brand-text">Untuk Kita</span>
+    </a>
+    <nav class="nav">
+      <a href="letter.html" data-nav>Surat</a>
+      <a href="reasons.html" data-nav aria-current="page">Alasan</a>
+      <a href="gallery.html" data-nav>Foto</a>
+      <a href="videos.html" data-nav>Video</a>
+      <a href="moments.html" data-nav>Momen</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Buka menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <p class="kicker">Alasan Terstruktur</p>
+      <h1 class="title">Kenapa status itu perlu</h1>
+      <p class="lead">Tujuannya bukan dramatis. Tujuannya efisien dan adil.</p>
+
+      <div class="cards">
+        <article class="card mini">
+          <h2>1) Mengurangi asumsi</h2>
+          <p>
+            Tanpa status, semuanya interpretasi. Status membuat aturan main jelas: apa yang pantas, apa yang tidak, apa yang
+            kita harapkan satu sama lain.
+          </p>
+        </article>
+
+        <article class="card mini">
+          <h2>2) Melindungi waktu</h2>
+          <p>
+            Kedekatan tanpa arah itu menghabiskan hari tanpa kemajuan. Kejelasan memotong ketidakpastian dan menutup celah ragu.
+          </p>
+        </article>
+
+        <article class="card mini">
+          <h2>3) Menjaga rasa hormat</h2>
+          <p>
+            Kalau perasaan sudah ada, memperlakukannya sebagai “sekadar” itu meremehkan. Status adalah pengakuan yang jujur.
+          </p>
+        </article>
+
+        <article class="card mini">
+          <h2>4) Batas yang sehat</h2>
+          <p>
+            Status bukan penjara. Status adalah batas yang membuat hubungan aman: dari godaan ambigu, dari salah paham, dari
+            peran ganda yang melelahkan.
+          </p>
+        </article>
+
+        <article class="card mini">
+          <h2>5) Konsistensi</h2>
+          <p>
+            HTS sering kuat saat suasana baik dan hilang saat sulit. Pacaran yang sehat menguji konsistensi, bukan intensitas sesaat.
+          </p>
+        </article>
+
+        <article class="card mini">
+          <h2>6) Skenario yang rapi</h2>
+          <p>
+            Kalau jawabannya “iya”, kita mulai. Kalau “belum”, itu juga jelas. Yang merusak adalah “nanti” tanpa langkah nyata.
+          </p>
+        </article>
+      </div>
+
+      <div class="divider"></div>
+
+      <section class="card soft">
+        <h2>Kesepakatan minimal</h2>
+        <ul class="list">
+          <li>Komunikasi jelas: kabar, rencana, dan batasan.</li>
+          <li>Transparan: tidak memelihara opsi lain diam-diam.</li>
+          <li>Respek: konflik diselesaikan, bukan dipendam.</li>
+          <li>Waktu: tetap punya ruang masing-masing tanpa menghilang.</li>
+        </ul>
+      </section>
+
+      <div class="paper-foot">
+        <a class="btn primary" href="gallery.html" data-nav>Lanjut: Foto</a>
+        <a class="btn ghost" href="letter.html" data-nav>Kembali</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Pratinjau">
+      <button class="iconbtn" type="button" data-close aria-label="Tutup">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- gallery.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff78b6" />
+</head>
+<body class="page">
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" data-nav>
+      <span class="brand-mark"></span>
+      <span class="brand-text">Untuk Kita</span>
+    </a>
+    <nav class="nav">
+      <a href="letter.html" data-nav>Surat</a>
+      <a href="reasons.html" data-nav>Alasan</a>
+      <a href="gallery.html" data-nav aria-current="page">Foto</a>
+      <a href="videos.html" data-nav>Video</a>
+      <a href="moments.html" data-nav>Momen</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Buka menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <p class="kicker">Galeri</p>
+      <h1 class="title">4 foto</h1>
+      <p class="lead">Klik untuk pratinjau.</p>
+
+      <div class="gallery">
+        <figure class="shot" tabindex="0" data-preview="img" data-src="1767431101056.jpg" data-alt="Foto 1">
+          <img src="1767431101056.jpg" alt="Foto 1" loading="lazy" />
+          <figcaption>Foto 1</figcaption>
+        </figure>
+
+        <figure class="shot" tabindex="0" data-preview="img" data-src="1767431101071.jpg" data-alt="Foto 2">
+          <img src="1767431101071.jpg" alt="Foto 2" loading="lazy" />
+          <figcaption>Foto 2</figcaption>
+        </figure>
+
+        <figure class="shot" tabindex="0" data-preview="img" data-src="1767431101126.jpg" data-alt="Foto 3">
+          <img src="1767431101126.jpg" alt="Foto 3" loading="lazy" />
+          <figcaption>Foto 3</figcaption>
+        </figure>
+
+        <figure class="shot" tabindex="0" data-preview="img" data-src="1767431101139.jpg" data-alt="Foto 4">
+          <img src="1767431101139.jpg" alt="Foto 4" loading="lazy" />
+          <figcaption>Foto 4</figcaption>
+        </figure>
+      </div>
+
+      <div class="hint">
+        <div class="hint-title">Catatan</div>
+        <div class="muted">
+         kamu cantikkk
+        </div>
+      </div>
+
+      <div class="paper-foot">
+        <a class="btn primary" href="videos.html" data-nav>Lanjut: Video</a>
+        <a class="btn ghost" href="index.html" data-nav>Kembali</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Pratinjau">
+      <button class="iconbtn" type="button" data-close aria-label="Tutup">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- videos.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff78b6" />
+</head>
+<body class="page">
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" data-nav>
+      <span class="brand-mark"></span>
+      <span class="brand-text">Untuk Kita</span>
+    </a>
+    <nav class="nav">
+      <a href="letter.html" data-nav>Surat</a>
+      <a href="reasons.html" data-nav>Alasan</a>
+      <a href="gallery.html" data-nav>Foto</a>
+      <a href="videos.html" data-nav aria-current="page">Video</a>
+      <a href="moments.html" data-nav>Momen</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Buka menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <p class="kicker">Video</p>
+      <h1 class="title">3 video</h1>
+      <p class="lead">Mode kartu. Klik untuk layar besar.</p>
+
+      <div class="video-grid">
+        <article class="vcard" tabindex="0" data-preview="video" data-src="Bunga maaf - Ryuu Lbra  CC [32C84E8].mp4">
+          <div class="vthumb">
+            <div class="playbadge">Play</div>
+          </div>
+          <div class="vmeta">
+            <h2>Video 1</h2>
+            <p class="muted">video editan Aku</p>
+          </div>
+        </article>
+
+        <article class="vcard" tabindex="0" data-preview="video" data-src="Part Final With Ease - Jarfvy 🌿 [5A66F57].mp4">
+          <div class="vthumb">
+            <div class="playbadge">Play</div>
+          </div>
+          <div class="vmeta">
+            <h2>Video 2</h2>
+            <p class="muted">video editan Aku</p>
+          </div>
+        </article>
+
+
+      <div class="hint">
+        <div class="hint-title">Catatan</div>
+        <div class="muted">
+        </div>
+        ini adalah video buatan aku semua untuk km
+      </div>
+
+      <div class="paper-foot">
+        <a class="btn primary" href="moments.html" data-nav>Lanjut: Momen</a>
+        <a class="btn ghost" href="gallery.html" data-nav>Kembali</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Pratinjau">
+      <button class="iconbtn" type="button" data-close aria-label="Tutup">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

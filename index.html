@@ -1,0 +1,137 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Untuk Kita</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff78b6" />
+</head>
+<body class="page">
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" data-nav>
+      <span class="brand-mark"></span>
+      <span class="brand-text">Untuk Kita</span>
+    </a>
+
+    <nav class="nav">
+      <a href="letter.html" data-nav>Surat</a>
+      <a href="reasons.html" data-nav>Alasan</a>
+      <a href="gallery.html" data-nav>Foto</a>
+      <a href="videos.html" data-nav>Video</a>
+      <a href="moments.html" data-nav>Momen</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Buka menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card">
+      <div class="hero-left">
+        <p class="kicker">Tema: pink × putih</p>
+        <h1 class="title">Dari HTS ke hubungan yang jelas</h1>
+        <p class="lead">
+          Ini bukan gimmick. Ini rangkuman yang rapi tentang apa yang terasa, apa yang nyata, dan apa yang perlu diputuskan.
+          Biar tidak ada kebiasaan menggantung yang diam-diam mengikis.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="letter.html" data-nav>Baca Surat Utama</a>
+          <a class="btn ghost" href="gallery.html" data-nav>Lihat Foto</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Foto</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Video</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">5</div>
+            <div class="stat-label">Halaman</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="glass">
+          <div class="ring"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+
+          <div class="quote">
+            <div class="quote-mark">“</div>
+            <p>
+              Kejelasan itu bukan tekanan. Kejelasan itu bentuk hormat:
+              ke waktu, ke perasaan, dan ke usaha yang sudah terjadi.
+            </p>
+            <div class="quote-mark end">”</div>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Jelas</span>
+            <span class="chip">Tenang</span>
+            <span class="chip">Serius</span>
+            <span class="chip">Konsisten</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card mini">
+        <h2>Kenapa dibuat</h2>
+        <p>
+          Supaya kalimat-kalimat penting tidak hilang karena gengsi, sibuk, atau asumsi. Yang ada di sini ditulis utuh.
+        </p>
+        <a class="textlink" href="reasons.html" data-nav>Buka halaman Alasan</a>
+      </article>
+
+      <article class="card mini">
+        <h2>Formatnya</h2>
+        <p>
+          Ada surat panjang, alasan yang terstruktur, galeri foto, halaman video, dan garis momen singkat.
+        </p>
+        <a class="textlink" href="moments.html" data-nav>Buka halaman Momen</a>
+      </article>
+
+      <article class="card mini">
+        <h2>Kesan visual</h2>
+        <p>
+          Pink-putih, efek kaca, animasi latar, partikel hati minimal, dan transisi antar halaman yang halus.
+        </p>
+        <a class="textlink" href="gallery.html" data-nav>Buka Galeri</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="muted">aku kalo gabut bikin website mwhehehehehehe</div>
+      <div class="muted">I LOVE U VIAAAAAAAAA.</div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Pratinjau">
+      <button class="iconbtn" type="button" data-close aria-label="Tutup">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

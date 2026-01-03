@@ -1,0 +1,110 @@
+<!-- moments.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Momen</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff78b6" />
+</head>
+<body class="page">
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" data-nav>
+      <span class="brand-mark"></span>
+      <span class="brand-text">Untuk Kita</span>
+    </a>
+    <nav class="nav">
+      <a href="letter.html" data-nav>Surat</a>
+      <a href="reasons.html" data-nav>Alasan</a>
+      <a href="gallery.html" data-nav>Foto</a>
+      <a href="videos.html" data-nav>Video</a>
+      <a href="moments.html" data-nav aria-current="page">Momen</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Buka menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <p class="kicker">Momen</p>
+      <h1 class="title">Garis kecil yang berarti</h1>
+      <p class="lead">Ini bukan kronologi lengkap. Ini penanda yang membuat “kita” terasa nyata.</p>
+
+      <div class="timeline">
+        <div class="titem">
+          <div class="dot"></div>
+          <div class="tcard">
+            <h2>Pertama kali nyambung</h2>
+            <p>
+              Ada momen ketika obrolan berhenti jadi basa-basi. Dari situ, kedekatan mulai punya ritme.
+            </p>
+          </div>
+        </div>
+
+        <div class="titem">
+          <div class="dot"></div>
+          <div class="tcard">
+            <h2>Mulai saling cari</h2>
+            <p>
+              Bukan karena sepi, tapi karena memang ingin. Ada bedanya, dan itu terasa.
+            </p>
+          </div>
+        </div>
+
+        <div class="titem">
+          <div class="dot"></div>
+          <div class="tcard">
+            <h2>Ruang aman</h2>
+            <p>
+              Saat hari tidak baik, kamu tetap jadi bagian yang menenangkan. Bukan solusi instan, tapi penopang.
+            </p>
+          </div>
+        </div>
+
+        <div class="titem">
+          <div class="dot"></div>
+          <div class="tcard">
+            <h2>Kedekatan yang butuh status</h2>
+            <p>
+              Di titik ini, ambigu tidak lagi lucu. Ambigu mulai jadi beban. Kejelasan jadi kebutuhan.
+            </p>
+          </div>
+        </div>
+
+        <div class="titem">
+          <div class="dot"></div>
+          <div class="tcard">
+            <h2>Langkah berikutnya</h2>
+            <p>
+              Kalau kita sama-sama memilih, kita buat sederhana: pacaran, jujur, dan konsisten.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-foot">
+        <a class="btn primary" href="index.html" data-nav>Kembali ke Depan</a>
+        <a class="btn ghost" href="letter.html" data-nav>Baca Surat Lagi</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Pratinjau">
+      <button class="iconbtn" type="button" data-close aria-label="Tutup">✕</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
